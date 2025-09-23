@@ -1,0 +1,52 @@
+/* Reset */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Parallax sections */
+.parallax {
+  height: 100vh; /* Full viewport height */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Example background images */
+.bg1 {
+  background-image: url('https://picsum.photos/id/1015/1920/1080');
+}
+.bg2 {
+  background-image: url('https://picsum.photos/id/1016/1920/1080');
+}
+
+/* Captions in the middle */
+.caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 20px 40px;
+  font-size: 24px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* Content block between parallax sections */
+.content {
+  height: 50vh;
+  background: #111;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
