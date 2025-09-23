@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 02 - It's over 9000</title>
+  <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="left" placeholder="Left number">
+    <select id="operator">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+      <option value="%">%</option>
+    </select>
+    <input type="text" id="right" placeholder="Right number">
+    <button id="try">Try me!</button>
+  </div>
+
+  <script>
+    const left = document.getElementById("left");
+    const right = document.getElementById("right");
+    const operator = document.getElementById("operator");
+    const button = document.getElementById("try");
+
+    button.addEventListener("click", () => {
+      let a = parseInt(left.value, 10);
+      let b = parseInt(right.value, 10);
+      let op = operator.value;
+
+      // Validate input
+      if (isNaN(a) || isNaN(b) || a < 0 || b < 0) {
+        alert("Error :(");
+        return;
+      }
+
+      let result;
+      switch(op) {
+        case '+': result = a + b; break;
+        case '-': result = a - b; break;
+        case '*': result = a * b; break;
+        case '/':
+          if (b === 0) {
+            alert("It's over 9000!");
+            console.log("It's over 9000!");
+            return;
+          }
+          result = a / b;
+          break;
+        case '%':
+          if (b === 0) {
+            alert("It's over 9000!");
+            console.log("It's over 9000!");
+            return;
+          }
+          result = a % b;
+          break;
+      }
+
+      alert(result);
+      console.log(result);
+    });
+
+    // Reminder every 30 seconds
+    setInterval(() => {
+      alert("Please, use me...");
+    }, 30000);
+  </script>
+</body>
+</html>
