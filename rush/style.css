@@ -1,0 +1,107 @@
+/* General Body */
+body {
+  font-family: "Arial Narrow", Arial, sans-serif;
+  background: linear-gradient(135deg, #ffe6f2, #fff0f5); /* soft girly gradient */
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Decorative Heading */
+h1, h2, h3 {
+  color: #ff4d94; /* hot pink */
+  font-weight: bold;
+  text-shadow: 2px 2px #ffd6e8; /* soft pink shadow */
+  letter-spacing: 2px;
+}
+
+/* Portfolio title only */
+.portfolio-title {
+  font-family: 'Dancing Script', cursive; /* Or Aston Script if loaded */
+  font-size: 3rem;
+  color: #ff66b2;
+  position: relative;
+}
+.portfolio-title::before {
+  content: "♡ ";
+  color: #ff99cc;
+}
+.portfolio-title::after {
+  content: " ♡";
+  color: #ff99cc;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, #ff80bf, #ff4da6);
+  box-shadow: 0 4px 12px rgba(255, 128, 191, 0.4);
+}
+.navbar .nav-link,
+.navbar .navbar-brand {
+  color: white !important;
+  font-weight: bold;
+}
+.navbar .nav-link:hover {
+  color: #ffe6f2 !important;
+  text-decoration: underline;
+}
+
+/* Buttons */
+.btn-dark {
+  background: linear-gradient(90deg, #ff66b2, #ff99cc);
+  border: none;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(255, 102, 178, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+.btn-dark:hover {
+  background: linear-gradient(90deg, #ff3385, #ff66b2);
+  transform: scale(1.05);
+}
+
+/* Sections (cute card style) */
+section {
+  background: #fff;
+  border-radius: 25px;
+  padding: 40px;
+  margin: 50px auto;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  max-width: 900px;
+  transition: all 0.3s ease-in-out;
+}
+section:hover {
+  transform: translateY(-5px);
+}
+
+/* Contact links */
+a {
+  color: #ff66b2;
+  font-weight: bold;
+  transition: 0.3s;
+}
+a:hover {
+  color: #ff1a8c;
+  text-decoration: underline wavy #ff99cc;
+}
+
+/* Landing Box */
+#landing {
+  background-color: #fff0f8;
+  border-radius: 30px;
+  padding: 60px;
+  box-shadow: 0 6px 20px rgba(255, 102, 178, 0.3);
+  animation: fadeIn 1s ease-in;
+}
+
+/* Rounded profile pictures with border */
+img.rounded-circle {
+  border: 5px solid #ffb6c1;
+  box-shadow: 0 4px 12px rgba(255, 182, 193, 0.6);
+  transition: transform 0.3s ease;
+}
+img.rounded-circle:hover {
+  transform: rotate(-3deg) scale(1.05);
+}
+
